@@ -50,7 +50,7 @@
     ]
   },
   "scripts": {
-    "deploy:vscode-ext": "npx vsce publish",
-    "build:vscode-ext": "npx vsce package"
+    "deploy": "npx vsce publish",
+    "package": "npx vsce package"
   }
 }

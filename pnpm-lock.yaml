@@ -6,10 +6,7 @@ importers:
     specifiers: {}
 
   apps/anycode-clausewitz:
-    specifiers:
-      tree-sitter-cli: ^0.20.6
-    devDependencies:
-      tree-sitter-cli: 0.20.7
+    specifiers: {}
 
   packages/tree-sitter-clausewitz:
     specifiers:

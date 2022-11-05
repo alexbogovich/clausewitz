@@ -1,9 +1,12 @@
 {
-  "name": "clausewitz",
-  "version": "1.0.0",
-  "description": "",
+  "name": "clausewitz-monorepo",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tree-sitter:parser": "pnpm --filter tree-sitter-clausewitz parser",
+    "tree-sitter:test": "pnpm --filter tree-sitter-clausewitz test",
+    "tree-sitter:wasm": "pnpm --filter tree-sitter-clausewitz wasm",
+    "tree-sitter:playground": "pnpm --filter tree-sitter-clausewitz playground",
+    "anycode:package": "pnpm --filter anycode-clausewitz package",
+    "anycode:deploy": "pnpm --filter anycode-clausewitz deploy"
   },
   "keywords": [],
   "author": "Alex Bogovich",
