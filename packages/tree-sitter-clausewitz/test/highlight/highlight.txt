@@ -1,0 +1,19 @@
+types Default
+# ^ keyword
+{
+	type shipping_lane_information = flowcontainer {
+	# ^ class
+	#       ^ identifier
+	# 									^ identifier
+		parentanchor = hcenter
+		# ^ identifier
+		#				 ^ identifier
+		margin_left = 10
+		# ^ identifier
+		#              ^ number
+		minimumsize = { @panel_width -1 }
+		# ^ identifier
+		#              		^ ref
+		#							  ^ identifier
+	}
+}

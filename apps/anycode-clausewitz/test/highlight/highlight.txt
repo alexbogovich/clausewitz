@@ -1,0 +1,39 @@
+types Default
+# ^ keyword
+{
+	type shipping_lane_information = flowcontainer {
+	# ^ class
+	#       ^ identifier
+	# 									^ identifier
+		block "visible" {
+		# ^ keyword
+			visible = "[Not(IsDataModelEmpty( Country.AccessShippingLanes ))]"
+			# ^ property
+		}
+		parentanchor = hcenter
+		# <- property
+		direction = vertical
+		# <- property
+		margin_left = 10
+		# <- property
+		#              ^ number
+		minimumsize = { @panel_width -1 }
+		#              		^ ref
+		#							  ^ property
+		maximumsize = { @panel_width -1 }
+
+		flowcontainer = {
+			block "datamodel" {
+			  datamodel = "[Country.AccessShippingLanes]"
+			}
+
+			spacing = 10
+			direction = vertical
+			parentanchor = hcenter
+
+			item = {
+				shipping_lane_item = { }
+			}
+		}
+	}
+}

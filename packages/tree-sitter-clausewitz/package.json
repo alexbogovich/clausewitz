@@ -1,0 +1,37 @@
+{
+  "name": "tree-sitter-clausewitz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bindings/node",
+  "scripts": {
+    "parser": "tree-sitter generate",
+    "wasm": "tree-sitter build-wasm",
+    "test": "tree-sitter test",
+    "playground": "tree-sitter playground"
+  },
+  "tree-sitter": [
+    {
+      "file-types": [
+        "txt",
+        "gui"
+      ],
+      "highlights": [
+        "queries/highlights.scm",
+        "queries/comments.scm",
+        "queries/folding.scm",
+        "queries/identifiers.scm",
+        "queries/locals.scm",
+        "queries/outline.scm",
+        "queries/references.scm"
+      ]
+    }
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nan": "^2.16.0"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.20.7"
+  }
+}

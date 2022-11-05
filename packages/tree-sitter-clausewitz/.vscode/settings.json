@@ -1,0 +1,7 @@
+{
+    "configurationDefaults": {
+        "[clausewitz]": {
+          "editor.semanticHighlighting.enabled": true
+        }
+    }
+}

@@ -1,0 +1,56 @@
+{
+  "name": "anycode-clausewitz",
+  "publisher": "Alex Bogovich",
+  "displayName": "anycode-clausewitz",
+  "description": "clausewitz for Anycode",
+  "version": "0.0.2",
+  "keywords": [
+    "parsing",
+    "incremental"
+  ],
+  "engines": {
+    "vscode": "^1.67.0"
+  },
+  "contributes": {
+    "configurationDefaults": {
+      "[clausewitz]": {
+        "editor.semanticHighlighting.enabled": true
+      }
+    },
+    "anycodeLanguages": {
+      "grammarPath": "../../packages/tree-sitter-clausewitz/tree-sitter-clausewitz.wasm",
+      "languageId": "clausewitz",
+      "extensions": [
+        "txt",
+        "gui"
+      ],
+      "queryPaths": {
+        "comments": "../../packages/tree-sitter-clausewitz/queries/comments.scm",
+        "folding": "../../packages/tree-sitter-clausewitz/queries/folding.scm",
+        "identifiers": "../../packages/tree-sitter-clausewitz/queries/identifiers.scm",
+        "locals": "../../packages/tree-sitter-clausewitz/queries/locals.scm",
+        "outline": "../../packages/tree-sitter-clausewitz/queries/outline.scm",
+        "references": "../../packages/tree-sitter-clausewitz/queries/references.scm"
+      }
+    },
+    "languages": [
+      {
+        "id": "clausewitz",
+        "extensions": [
+          ".txt",
+          ".gui"
+        ],
+        "aliases": [
+          "Clausewitz",
+          "clausewitz",
+          "paradox",
+          "pdxscript"
+        ]
+      }
+    ]
+  },
+  "scripts": {
+    "deploy:vscode-ext": "npx vsce publish",
+    "build:vscode-ext": "npx vsce package"
+  }
+}

@@ -1,0 +1,28 @@
+========
+comments
+========
+
+
+# Comment 1
+
+### Comment 2
+
+obj = {
+    # comment 3
+
+    property1 = 1 # comment 4
+}
+
+---
+
+    (source_file
+      (comment)
+      (comment)
+      (assign_statement
+        (identifier)
+        (scope
+          (comment)
+          (property_assigment
+            (property)
+            (integer))
+          (comment))))

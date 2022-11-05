@@ -1,0 +1,38 @@
+========
+type declaration
+========
+
+types Default
+{
+	type basic_type = parent_type {
+		property1 = value
+	}
+
+  type nested_type = parent_type {
+		property1 = value
+	}
+}
+
+---
+
+ (source_file
+      (type_namespace
+        (keyword)
+        name: (identifier)
+        (type_declaration
+          (keyword)
+          name: (identifier)
+          parent: (reference)
+          body: (scope
+            (property_assigment
+              left: (property)
+              right: (reference))))
+        (type_declaration
+          (keyword)
+          name: (identifier)
+          parent: (reference)
+          body: (scope
+            (property_assigment
+              left: (property)
+              right: (reference))))))
+

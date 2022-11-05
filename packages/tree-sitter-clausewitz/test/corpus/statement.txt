@@ -1,0 +1,59 @@
+========
+assign statement integer to identifier
+========
+
+test = 1
+
+---
+
+ (source_file
+    (assign_statement
+      left: (identifier)
+      right: (integer)))
+
+========
+assign statement reference to identifier
+========
+
+variable = test
+
+---
+
+ (source_file
+    (assign_statement
+        left: (identifier)
+        right: (reference)))
+
+========
+assign statement string to identifier
+========
+
+string = "hello"
+
+---
+
+  (source_file
+    (assign_statement
+      left: (identifier)
+      right: (string
+        (string_fragment))))
+
+========
+assign statement array to identifier
+========
+
+test = {
+  testa
+  testb
+  testc
+}
+
+---
+
+    (source_file
+      (assign_statement
+        left: (identifier)
+        right: (array
+          (reference)
+          (reference)
+          (reference))))
