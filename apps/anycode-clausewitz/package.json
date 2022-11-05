@@ -3,7 +3,7 @@
   "publisher": "Alex Bogovich",
   "displayName": "anycode-clausewitz",
   "description": "clausewitz for Anycode",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "keywords": [
     "parsing",
     "incremental"
@@ -18,19 +18,19 @@
       }
     },
     "anycodeLanguages": {
-      "grammarPath": "../../packages/tree-sitter-clausewitz/tree-sitter-clausewitz.wasm",
+      "grammarPath": "dist/tree-sitter-clausewitz.wasm",
       "languageId": "clausewitz",
       "extensions": [
         "txt",
         "gui"
       ],
       "queryPaths": {
-        "comments": "../../packages/tree-sitter-clausewitz/queries/comments.scm",
-        "folding": "../../packages/tree-sitter-clausewitz/queries/folding.scm",
-        "identifiers": "../../packages/tree-sitter-clausewitz/queries/identifiers.scm",
-        "locals": "../../packages/tree-sitter-clausewitz/queries/locals.scm",
-        "outline": "../../packages/tree-sitter-clausewitz/queries/outline.scm",
-        "references": "../../packages/tree-sitter-clausewitz/queries/references.scm"
+        "comments": "dist/queries/comments.scm",
+        "folding": "dist/queries/folding.scm",
+        "identifiers": "dist/queries/identifiers.scm",
+        "locals": "dist/queries/locals.scm",
+        "outline": "dist/queries/outline.scm",
+        "references": "dist/queries/references.scm"
       }
     },
     "languages": [

@@ -1,7 +1,0 @@
-types Default
-{
-	type shipping_lane_information = flowcontainer {
-	# 		^ class
-
-	}
-}
