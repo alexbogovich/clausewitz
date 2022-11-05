@@ -8,3 +8,7 @@
 	left: (identifier) @variable.name
 	right: (scope)
 ) @variable
+
+(property_assigment
+	left: (property) @field.name
+) @field

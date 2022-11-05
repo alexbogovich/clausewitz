@@ -4,14 +4,14 @@ types Default
 	type shipping_lane_information = flowcontainer {
 	# 		^ class
 		parentanchor = hcenter
-		# ^ identifier
-		#				 ^ identifier
+		# ^ field.name
+		#				
 		margin_left = 10
-		# ^ identifier
+		# ^ field.name
 		#              ^ number
 		minimumsize = { @panel_width -1 }
-		# ^ identifier
+		# ^ field.name
 		#              		^ ref
-		#							  ^ identifier
+		#							  
 	}
 }

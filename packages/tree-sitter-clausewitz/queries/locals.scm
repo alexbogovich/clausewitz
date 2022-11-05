@@ -1,1 +1,2 @@
+(identifier) @usage
 (scope) @scope

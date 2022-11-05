@@ -13,6 +13,6 @@ types Default
 
 pm_no_steam_automation = {
 # 		^ variable.name
-	texture = "gfx/interface/icons/production_method_icons/no_automation.dds"
 	ai_value = 0
+	#  ^ field.name
 }
