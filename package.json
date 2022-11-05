@@ -7,12 +7,14 @@
     "tree-sitter:playground": "pnpm --filter tree-sitter-clausewitz playground",
     "anycode:prepare": "node scripts/prepare-input-anycode-clausewitz.js",
     "anycode:package": "pnpm --filter anycode-clausewitz package",
-    "anycode:deploy": "pnpm --filter anycode-clausewitz deploy"
+    "anycode:deploy": "pnpm --filter anycode-clausewitz deploy",
+    "package": "run-s tree-sitter:parser tree-sitter:test tree-sitter:wasm anycode:prepare anycode:package"
   },
   "keywords": [],
   "author": "Alex Bogovich",
   "license": "MIT",
   "devDependencies": {
-    "fs-extra": "^10.1.0"
+    "fs-extra": "^10.1.0",
+    "npm-run-all": "^4.1.5"
   }
 }

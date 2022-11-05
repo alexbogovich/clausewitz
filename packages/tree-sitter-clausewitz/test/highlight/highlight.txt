@@ -2,9 +2,7 @@ types Default
 # ^ keyword
 {
 	type shipping_lane_information = flowcontainer {
-	# ^ class
-	#       ^ identifier
-	# 									^ identifier
+	# 		^ class
 		parentanchor = hcenter
 		# ^ identifier
 		#				 ^ identifier

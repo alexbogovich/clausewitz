@@ -1,5 +1,3 @@
-(identifier) @identifier
-
 (property_assigment
     left: (property) @identifier)
 (property_assigment
